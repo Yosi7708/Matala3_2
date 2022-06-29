@@ -220,6 +220,16 @@ public class Window_main extends JFrame  {
             }
         });
         JButton button8= new JButton("Contract");
+        button8.addActionListener( (event) -> {
+
+            try {
+
+                Actions.contract(scanImage2);
+
+            } catch (Exception e) {
+                System.out.println("nothing");
+            }
+        });
         JButton button9= new JButton("Sepia");
         button9.addActionListener( (event) -> {
 

@@ -193,6 +193,31 @@ public class Actions  {
         }
         Window_main.updatePhoto();
     }
+    public static void contract(BufferedImage img) throws Exception {
+        int width = img.getWidth();
+        int height = img.getHeight();
+
+        // Convert to negative
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                int p = img.getRGB(x, y);
+                int a = (p >> 24) & 0xff;
+                int r = (p >> 16) & 0xff;
+                int g = (p >> 8) & 0xff;
+                int b = p & 0xff;
+
+                // subtract RGB from 255
+                r = 255 - r;
+                g = 255 - g;
+                b = 255 - b;
+
+                // set new RGB value
+                p = (a << 48) | (r << 32) | (g << 16) | b;
+                img.setRGB(x, y, p);
+            }
+        }
+        Window_main.updatePhoto();
+    }
     //5.
     public static void lighter(BufferedImage img) throws Exception {
         int rgb[];
@@ -281,4 +306,3 @@ public class Actions  {
         return value;
     }
 }
-
