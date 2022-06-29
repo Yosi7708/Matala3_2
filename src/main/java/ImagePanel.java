@@ -17,8 +17,6 @@ public class ImagePanel extends JPanel{
         } catch (IOException ex) {
             // handle exception...
         }
-
-
     }
 
     @Override

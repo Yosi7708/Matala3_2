@@ -25,7 +25,7 @@ public class Window_main extends JFrame  {
     static JLabel picLabel,picLabel2;
     ChromeDriver driver ;
     static BufferedImage scanImage, scanImage2;
-     static URL imageUrl;
+    static URL imageUrl;
 
 
     Window_main()  {
@@ -145,18 +145,35 @@ public class Window_main extends JFrame  {
         button1.addActionListener( (event) -> {
 
             try {
-                //זה קורא לפונקציה אבל נופל שם בסוף בתהליך כתיבת הקובץ
-//                Actions.grey(imgToTest);
-//                Actions.grayScale(imgToTest);
-//                Actions.Grayscale(scanImage2);
-                  Actions.Grayscale(scanImage2);
+
+                Actions.Grayscale(scanImage2);
 
             } catch (Exception e) {
                 System.out.println("nothing");
             }
         });
         JButton button2= new JButton("Color Shift Right");
+        button2.addActionListener( (event) -> {
+
+            try {
+
+                Actions.ColorShiftRight(scanImage2);
+
+            } catch (Exception e) {
+                System.out.println("nothing");
+            }
+        });
         JButton button3= new JButton("Color Shift Left");
+        button3.addActionListener( (event) -> {
+
+            try {
+
+                Actions.ColorShiftLeft(scanImage2);
+
+            } catch (Exception e) {
+                System.out.println("nothing");
+            }
+        });
         JButton button4= new JButton("Mirror");
         button4.addActionListener( (event) -> {
 
@@ -169,7 +186,28 @@ public class Window_main extends JFrame  {
             }
         });
         JButton button5= new JButton("Show Borders");
-        JButton button6= new JButton("Eliminate Red/Green/Blue");
+        button5.addActionListener( (event) -> {
+
+            try {
+
+                Actions.ShowBorders(scanImage2);
+
+            } catch (Exception e) {
+                System.out.println("nothing");
+            }
+        });
+        JButton button6= new JButton("Eliminate Red");
+        button6.addActionListener( (event) -> {
+
+            try {
+
+                Actions.EliminateRed(scanImage2);
+
+            } catch (Exception e) {
+                System.out.println("nothing");
+            }
+        });
+
         JButton button7= new JButton("Negative");
         button7.addActionListener( (event) -> {
 
@@ -227,17 +265,10 @@ public class Window_main extends JFrame  {
         buttonsPanel.add(button10).setBounds(button9.getX(),button9.getY()+ELEMENT_HEIGHT,ELEMENT_WIDTH,ELEMENT_HEIGHT);
         buttonsPanel.add(button11).setBounds(button10.getX(),button10.getY()+ELEMENT_HEIGHT,ELEMENT_WIDTH,ELEMENT_HEIGHT);
 
-//        buttonsPanel.revalidate();
+
 
     }
-//    public static boolean enter1(){
-//        System.out.println("enter number 1");
-//        Scanner s= new Scanner(System.in);
-//        if(s.nextInt()==1){
-//            return true;
-//        }
-//        return false;
-//    }
+
 
     public static void updatePhoto() throws IOException{
         newImagePanel.removeAll();
