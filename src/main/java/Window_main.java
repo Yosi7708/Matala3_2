@@ -296,7 +296,7 @@ public class Window_main extends JFrame  {
             System.out.println("dont add");
         }
         scanImage2= ImageIO.read(imageUrl);
-
+        int i=0; //just to check
     }
 
 
