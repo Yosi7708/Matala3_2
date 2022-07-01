@@ -131,7 +131,7 @@ public class Actions implements SizeToApp {
             for (int y = 0; y < img.getHeight(); y++) {
                 Color curentcolor = new Color(img.getRGB(x, y));
                 if (previous != null && !isSimilarColor(previous, curentcolor))
-                    img.setRGB(x, y, Color.GREEN.getRGB());
+                    img.setRGB(x, y, Color.BLACK.getRGB());
                 previous = curentcolor;
             }
         }
@@ -296,7 +296,7 @@ public class Actions implements SizeToApp {
         int redDiff = Math.abs(color1.getRed() - color2.getRed());
         int greenDiff = Math.abs(color1.getGreen() - color2.getGreen());
         int blueDiff = Math.abs(color1.getBlue() - color2.getBlue());
-        if (redDiff + greenDiff + blueDiff < 40)
+        if (redDiff + greenDiff + blueDiff < 30)
             similar = true;
 
         return similar;
