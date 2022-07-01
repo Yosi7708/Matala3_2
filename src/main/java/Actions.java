@@ -296,7 +296,7 @@ public class Actions implements SizeToApp {
         int redDiff = Math.abs(color1.getRed() - color2.getRed());
         int greenDiff = Math.abs(color1.getGreen() - color2.getGreen());
         int blueDiff = Math.abs(color1.getBlue() - color2.getBlue());
-        if (redDiff + greenDiff + blueDiff < 30)
+        if (redDiff + greenDiff + blueDiff < 25)
             similar = true;
 
         return similar;
