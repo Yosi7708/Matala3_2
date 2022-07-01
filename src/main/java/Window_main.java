@@ -37,7 +37,7 @@ public class Window_main extends JFrame implements SizeToApp {
     public static void main(String[] args) {
         System.setProperty(
                 "webdriver.chrome.driver",
-                "./chromedriver102.exe");
+                "./chromedriver103.exe");
 
         // יצירת חלון  חדש
         new Window_main();
