@@ -117,20 +117,20 @@ public class ButtonsPanel extends MyPanels implements SizeToApp {
                         JOptionPane.PLAIN_MESSAGE);
             }
         });
-        JButton button5 = new JButton("Show Borders");
-        button5.addActionListener((event) -> {
-
-            try {
-
-                Actions.ShowBorders(scanImage2);
-
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(new JFrame(),
-                        e.getMessage(),
-                        "error",
-                        JOptionPane.PLAIN_MESSAGE);
-            }
-        });
+//        JButton button5 = new JButton("Show Borders");
+//        button5.addActionListener((event) -> {
+//
+//            try {
+//
+//                Actions.ShowBorders(scanImage2);
+//
+//            } catch (Exception e) {
+//                JOptionPane.showMessageDialog(new JFrame(),
+//                        e.getMessage(),
+//                        "error",
+//                        JOptionPane.PLAIN_MESSAGE);
+//            }
+//        });
         JButton button6 = new JButton("Eliminate Red");
         button6.addActionListener((event) -> {
 
@@ -220,8 +220,8 @@ public class ButtonsPanel extends MyPanels implements SizeToApp {
         this.add(button2).setBounds(button1.getX(), button1.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
         this.add(button3).setBounds(button2.getX(), button2.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
         this.add(button4).setBounds(button3.getX(), button3.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
-        this.add(button5).setBounds(button4.getX(), button4.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
-        this.add(button6).setBounds(button5.getX(), button5.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
+//        this.add(button5).setBounds(button4.getX(), button4.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
+        this.add(button6).setBounds(button4.getX(), button4.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
         this.add(button7).setBounds(button6.getX(), button6.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
         this.add(button8).setBounds(button7.getX(), button7.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
         this.add(button9).setBounds(button8.getX(), button8.getY() + ELEMENT_HEIGHT, ELEMENT_WIDTH, ELEMENT_HEIGHT);
