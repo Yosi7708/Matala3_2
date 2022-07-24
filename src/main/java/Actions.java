@@ -119,24 +119,10 @@ public class Actions implements SizeToApp {
         }
         updatePhoto(img);
 
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
+
     }
 
-//    //3.
-//    public static void ShowBorders(BufferedImage img) throws Exception {
-//        Color previous = null;
-//        for (int x = 0; x < img.getWidth(); x++) {
-//            for (int y = 0; y < img.getHeight(); y++) {
-//                Color curentcolor = new Color(img.getRGB(x, y));
-//                if (previous != null && !isSimilarColor(previous, curentcolor))
-//                    img.setRGB(x, y, Color.BLACK.getRGB());
-//                previous = curentcolor;
-//            }
-//        }
-//        updatePhoto(img);
-//    }
+
 
     public static void sepia(BufferedImage img) throws Exception {
         for (int y = 0; y < img.getHeight(); y++) {

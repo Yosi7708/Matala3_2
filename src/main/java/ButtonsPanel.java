@@ -117,20 +117,7 @@ public class ButtonsPanel extends MyPanels implements SizeToApp {
                         JOptionPane.PLAIN_MESSAGE);
             }
         });
-//        JButton button5 = new JButton("Show Borders");
-//        button5.addActionListener((event) -> {
-//
-//            try {
-//
-//                Actions.ShowBorders(scanImage2);
-//
-//            } catch (Exception e) {
-//                JOptionPane.showMessageDialog(new JFrame(),
-//                        e.getMessage(),
-//                        "error",
-//                        JOptionPane.PLAIN_MESSAGE);
-//            }
-//        });
+
         JButton button6 = new JButton("Eliminate Red");
         button6.addActionListener((event) -> {
 
