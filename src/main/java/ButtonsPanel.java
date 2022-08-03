@@ -228,7 +228,7 @@ public class ButtonsPanel extends MyPanels implements SizeToApp {
             e.printStackTrace();
         }
         // find the element of the profile photo and display it
-        WebElement element = driver.findElement(By.xpath("//div[@class='b3onmgus e5nlhep0 ph5uu5jm ecm0bbzt spb7xbtv bkmhp75w emlxlaya s45kfl79 cwj9ozl2']//div[@class='q9uorilb l9j0dhe7 pzggbiyp du4w35lb']//*[name()='svg']//*[name()='g' and contains(@mask,'url(#jsc_c')]//*[name()='image' and contains(@x,'0')]"));
+        WebElement element = driver.findElement(By.tagName("image"));
         String src = element.getAttribute("xlink:href");
         imageUrl = new URL(src);
         this.scanImage = ImageIO.read(imageUrl);
