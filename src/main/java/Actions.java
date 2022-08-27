@@ -90,7 +90,6 @@ public class Actions implements SizeToApp {
 //            ImageIO.write(img, "png", output);
         updatePhoto(img);
 
-
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }

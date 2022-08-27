@@ -7,7 +7,6 @@ public class Window_main extends JFrame implements SizeToApp {
 
     Window_main() {
 
-
         //left panel
         OriginImagePanel originImagePanel = new OriginImagePanel(0, new Color(255,255,204));
         this.add(originImagePanel);
@@ -20,7 +19,7 @@ public class Window_main extends JFrame implements SizeToApp {
 //        // הגדרת חלון בסיסית
 
 
-        this.setTitle("IMAGE PROCCESSING");
+        this.setTitle("IMAGE PROCESSING");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
         //פונקצייה מובנית הבונה את גודל החלון בהתאם לגודל הפנלים
